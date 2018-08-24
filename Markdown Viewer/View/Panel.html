@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no, width=device-width">
+    <title>Panel</title>
+    <style>
+        * {}
+
+        .table {
+            display: flex;
+            flex-flow: column nowrap;
+            background-color: rgb(239, 239, 245);
+        }
+
+        .cell {
+            border-top: 1px solid rgb(203, 203, 208);
+            border-bottom: 1px solid rgb(203, 203, 208);
+            background-color: rgb(254, 254, 255);
+            height: 48px;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+        }
+
+        .cell:active {
+            background-color: rgb(23, 232, 233);
+        }
+
+        .section:first-child .cell {
+            border-top: none;
+        }
+
+        .section:last-child .cell {
+            border-bottom: none;
+        }
+
+    </style>
+</head>
+<body>
+<section class="table">
+    <section class="section">
+        <div class="cell">
+            <div class="label">
+                Export to PDF
+            </div>
+        </div>
+        <div class="cell">
+            <div class="label">
+                Word
+            </div>
+            <div class="detail">
+                2060
+            </div>
+        </div>
+    </section>
+</section>
+</body>
+</html>
+
